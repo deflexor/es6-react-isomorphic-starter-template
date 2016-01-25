@@ -3,7 +3,7 @@ import PlaceholderComponent from '../components/placeholderComponent';
 
 let placeholderComponent = React.createFactory( PlaceholderComponent );
 
-function MainRoutes(app) {
+export default function MainRoutes(app) {
 
     app.get('/', (req, res) => {
 
@@ -15,4 +15,3 @@ function MainRoutes(app) {
 
 }
 
-export default MainRoutes;

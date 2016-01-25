@@ -9,7 +9,7 @@
  * ahead of node.js for ES6:
  * https://github.com/poshaughnessy/es6-react-jspm-starter-template
  */
-require('babel/register');
+require("babel-register");
 
 var server = require('./server');
 

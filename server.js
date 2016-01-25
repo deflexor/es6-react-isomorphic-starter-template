@@ -1,9 +1,11 @@
-const express = require('express'),
-    path = require('path'),
-    PORT = process.env.PORT || 8000;
+import mainRoutes from './src/routes/mainRoutes';
+import express  from 'express';
+import path from 'path';
 
-let app = express(),
-    mainRoutes = require('./src/routes/mainRoutes');
+const PORT = process.env.PORT || 8000;
+
+let app = express();
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -15,6 +17,11 @@ mainRoutes(app);
 app.use((req, res) => {
     res.status(404).send('Page not found');
 });
+
+async function test() {
+    var s = await setTimeout(() => { console.log('hi') }, 100);
+}
+test();
 
 export default {
     start: function() {

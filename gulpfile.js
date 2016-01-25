@@ -4,7 +4,7 @@
  */
 
 // Enable ES6 - this will make it automatically transpile required files. See: http://babeljs.io/docs/usage/require/
-require('babel/register');
+require("babel-register");
 
 // TEMP fix for this issue: https://github.com/babel/babel/issues/489
 Object.getPrototypeOf.toString = function() {return Object.toString();};
@@ -18,7 +18,7 @@ var gulp = require('gulp'),
     babelify = require('babelify'),
     browserify = require('browserify'),
     fs = require('fs'),
-    server = require('./server');
+    server = require('./server').default;
 
 /**
  *  Transpile and concatenate the JavaScripts into dist/bundle.js
