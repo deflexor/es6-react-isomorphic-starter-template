@@ -7,7 +7,8 @@
     "url": "https://github.com/poshaughnessy/es6-react-isomorphic-starter-template.git"
   },
   "scripts": {
-    "start": "node --harmony runServer"
+    "startsrv": "node --harmony runServer",
+    "start": "gulp"
   },
   "devDependencies": {
     "browser-pack": "~4.0.1",
@@ -26,7 +27,6 @@
   "dependencies": {
     "ejs": "^2.3.1",
     "express": "~4.12.3",
-    "react": "~0.13.1",
     "babel": "~6.3.26",
     "babel-preset-react": "~6.3.13",
     "babel-preset-es2015": "~6.3.13",
@@ -34,7 +34,9 @@
     "babel-plugin-transform-regenerator": "~6.4.4",
     "babel-register": "~6.4.3",
     "babel-plugin-transform-runtime": "~6.4.3",
-    "babel-runtime": "~6.3.19"
+    "babel-runtime": "~6.3.19",
+    "react": "~0.14.6",
+    "react-dom": "~0.14.6"
   },
   "engines": {
     "node": "0.12.x"

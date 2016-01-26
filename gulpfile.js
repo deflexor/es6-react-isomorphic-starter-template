@@ -25,7 +25,7 @@ var gulp = require('gulp'),
  */
 gulp.task('babel', function() {
 
-    browserify({ debug: true })
+    browserify({ debug: true, extensions: ['.js','.jsx','.json'] })
         .transform(babelify)
         .require('./src/main.js', { entry: true })
         .bundle()

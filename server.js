@@ -18,11 +18,6 @@ app.use((req, res) => {
     res.status(404).send('Page not found');
 });
 
-async function test() {
-    var s = await setTimeout(() => { console.log('hi') }, 100);
-}
-test();
-
 export default {
     start: function() {
         app.listen(PORT);
